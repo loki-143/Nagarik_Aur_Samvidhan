@@ -1,0 +1,62 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#video-player {
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+#video-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #333;
+}

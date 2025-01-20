@@ -1,0 +1,131 @@
+/* General styling for the website */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('constitution\ bg.jpeg'); /* Default background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Age group section styling (Horizontal Layout) */
+.age-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Ensure there is no padding around the image */
+.age-option {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+.age-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.age-image:hover {
+    transform: scale(1.1);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Content area for Learning, Games, Chatbot, and Social Engagement */
+.content-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.content-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    max-width: 250px;
+}
+
+.content-option img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px; /* Round corners */
+    transition: transform 0.3s ease;
+}
+
+.content-option img:hover {
+    transform: scale(1.1);
+}
+
+.content-option button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-option button:hover {
+    background-color: #45a049;
+}
+
+.social-engagement {
+    background-color: rgba(241, 241, 241, 0.8);
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Age-specific content styling */
+.age-specific-content {
+    display: none;
+}
+

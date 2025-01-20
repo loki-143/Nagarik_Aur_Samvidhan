@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids- Learning Hub</title>
+    <link rel="stylesheet" href="video.css">
+    <!-- Include Font Awesome for the icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>LEARNING HUB</h1>
+        <!-- Back Button with Icon -->
+        <a href="SIH.html#section-content">
+            <button id="back-button">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i> Back
+            </button>
+        </a>
+        
+    </header>
+
+    <main>
+        <section id="video-player">
+            <!-- Main Video (Updated) -->
+            <iframe id="main-video" src="https://www.youtube.com/embed/XrKEtEzqZ7g" title="Main Video" allowfullscreen></iframe>
+        </section>
+
+        <section id="video-thumbnails">
+            <!-- Thumbnail for Video 1 (Updated) -->
+            <div class="thumbnail" onclick="changeVideo('A5EfBGVtzmA')">
+                <img src="https://img.youtube.com/vi/A5EfBGVtzmA/0.jpg" alt="Video 1">
+                <p>Article 19</p>
+            </div>
+            <!-- Thumbnail for Video 2 (Updated) -->
+            <div class="thumbnail" onclick="changeVideo('y3jifGySVeg')">
+                <img src="https://img.youtube.com/vi/y3jifGySVeg/0.jpg" alt="Video 2">
+                <p>Article 39</p>
+            </div>
+            <!-- Thumbnail for Video 3 (Updated) -->
+            <div class="thumbnail" onclick="changeVideo('fDSbbFjXPMI')">
+                <img src="https://img.youtube.com/vi/fDSbbFjXPMI/0.jpg" alt="Video 3">
+                <p>Article 12</p>
+            </div>
+            <!-- Thumbnail for Video 4 (Updated) -->
+            <div class="thumbnail" onclick="changeVideo('QLSAPNNSVRU')">
+                <img src="https://img.youtube.com/vi/QLSAPNNSVRU/0.jpg" alt="Video 4">
+                <p>Article 326</p>
+            </div>
+            <!-- Thumbnail for Video 5 (Updated) -->
+            <div class="thumbnail" onclick="changeVideo('1KhibRod58Y')">
+                <img src="https://img.youtube.com/vi/1KhibRod58Y/0.jpg" alt="Video 5">
+                <p>Article 15(3)</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="video.js"></script>
+</body>
+</html>

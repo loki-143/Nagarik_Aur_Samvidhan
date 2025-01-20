@@ -1,0 +1,116 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('your-background-image.jpg'); /* Set your background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for better readability */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2, h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Battery Icon Styling */
+.battery {
+    width: 200px;
+    height: 50px;
+    border: 3px solid #333;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px auto;
+    background-color: #ddd;
+}
+
+.battery:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    width: 10px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.battery-level {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+/* Stars for Badges */
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.star {
+    font-size: 30px;
+    color: gold;
+}
+
+/* Streak Bar Styling */
+.streak-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.streak-level {
+    height: 100%;
+    background-color: #FF5722;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.3s;
+}

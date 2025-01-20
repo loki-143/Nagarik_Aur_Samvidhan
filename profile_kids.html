@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <h1>Kids Profile</h1>
+        <a href="SIH.html#section-content">
+            <button>Back</button>
+        </a>
+    </header>
+
+    <section>
+        <h2>Welcome, Virat !</h2>
+
+        <!-- Learning Progress as a Graph -->
+        <h3>Learning Progress</h3>
+        <canvas id="progressChart" width="300" height="50"></canvas>
+
+        <!-- Games Played as a Battery Icon -->
+        <h3>Games Played</h3>
+        <div class="battery">
+            <div class="battery-level" id="batteryLevel"></div>
+        </div>
+
+        <!-- Badges Earned as Stars -->
+        <h3>Badges Earned</h3>
+        <div class="stars" id="badges">
+            <!-- Stars will be added dynamically -->
+        </div>
+
+        <!-- Streaks (e.g., consecutive login days) -->
+        <h3>Streaks</h3>
+        <div class="streak-bar">
+            <div class="streak-level" id="streakLevel"></div>
+        </div>
+        <p><span id="streakCount"></span> days in a row!</p>
+    </section>
+
+    <script>
+        // Learning Progress Graph (Bar Chart)
+        const progressPercentage = 40; // Example: 40% progress
+        const canvas = document.getElementById('progressChart');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#4CAF50'; // Color of progress bar
+        ctx.fillRect(0, 0, progressPercentage * 3, 50); // Draw bar based on progressPercentage
+
+        ctx.fillStyle = '#ddd'; // Background bar
+        ctx.fillRect(progressPercentage * 3, 0, (100 - progressPercentage) * 3, 50); // Remaining portion
+
+        ctx.fillStyle = '#000'; // Text on the graph
+        ctx.font = '20px Arial';
+        ctx.fillText(progressPercentage + '%', 130, 30);
+
+        // Games Played as Battery Icon
+        const gamesPlayedPercentage = 50; // Example: 50% games played
+        const batteryLevel = document.getElementById('batteryLevel');
+        batteryLevel.style.width = gamesPlayedPercentage + '%'; // Set battery width according to percentage
+
+        // Badges Earned as Stars
+        const badgesEarned = 3; // Example: 3 badges earned
+        const badgesElement = document.getElementById('badges');
+        for (let i = 0; i < badgesEarned; i++) {
+            const star = document.createElement('span');
+            star.innerHTML = '&#9733;'; // Unicode for star
+            star.classList.add('star');
+            badgesElement.appendChild(star);
+        }
+
+        // Streaks (Consecutive Days)
+        const streakCount = 5; // Example: 5 days streak
+        const streakPercentage = streakCount * 10; // Example: max 10 days streak for full bar
+        const streakLevel = document.getElementById('streakLevel');
+        streakLevel.style.width = streakPercentage + '%'; // Adjust the streak bar width
+        document.getElementById('streakCount').innerText = streakCount; // Display streak count
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen & Constitution</title>
+    <link rel="stylesheet" href="sih.css">
+</head>
+<body>
+    <header>
+        <h1>NAGRIK AUR SAMVIDHAN</h1>
+    </header>
+
+    <section id="age-selection">
+        <div class="age-group">
+            <div class="age-option">
+                <button onclick="navigateToSection('kids')">
+                    <div class="image-container">
+                        <img src="kids.jpeg" alt="Kids" class="age-image"> <!-- Kids Animated Image -->
+                        <div class="overlay-text">KIDS</div>
+                    </div>
+                </button>
+            </div>
+            <div class="age-option">
+                <button onclick="navigateToSection('teens')">
+                    <div class="image-container">
+                        <img src="teens.jpeg" alt="Teens" class="age-image"> <!-- Teens Animated Image -->
+                        <div class="overlay-text">TEENS</div>
+                    </div>
+                </button>
+            </div>
+            <div class="age-option">
+                <button onclick="navigateToSection('adults')">
+                    <div class="image-container">
+                        <img src="adult.jpeg" alt="Adults" class="age-image"> <!-- Adults Animated Image -->
+                        <div class="overlay-text">ADULTS</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-content" style="display:none;">
+        <h2 id="age-title"></h2>
+    
+        <!-- Content Area: Different sections for Learning, Games, Chatbot, and Social Engagement -->
+        <div class="content-area">
+            <!-- Learning Section -->
+            <div class="content-option age-specific-content kids-content">
+                <img src="kids learning.jpeg" alt="Learning for Kids">
+                <button onclick="navigateTo('learning')">Learning Hub</button>
+            </div>
+            <div class="content-option age-specific-content teens-content">
+                <img src="teens learning.jpeg" alt="Learning for Teens">
+                <button onclick="navigateTo('learning')">Learning Hub</button>
+            </div>
+            <div class="content-option age-specific-content adults-content">
+                <img src="adults learn.jpeg" alt="Learning for Adults">
+                <button onclick="navigateTo('learning')">Learning Hub</button>
+            </div>
+    
+            <!-- Games Section -->
+            <div class="content-option age-specific-content kids-content">
+                <img src="kids games.jpeg" alt="Games for Kids">
+                <button onclick="navigateTo('games')">Gaming Hub</button>
+            </div>
+            <div class="content-option age-specific-content teens-content">
+                <img src="teens playing.jpeg" alt="Games for Teens">
+                <button onclick="navigateTo('games')">Gaming Hub</button>
+            </div>
+            <div class="content-option age-specific-content adults-content">
+                <img src="adults playing.jpeg" alt="Games for Adults">
+                <button onclick="navigateTo('games')">Gaming Hub</button>
+            </div>
+    
+            <!-- Chatbot Section -->
+            <div class="content-option age-specific-content kids-content">
+                <img src="kids ai.jpeg" alt="Chatbot for Kids">
+                <button onclick="navigateTo('chatbot')">AI Hub</button>
+            </div>
+            <div class="content-option age-specific-content teens-content">
+                <img src="teens ai.jpeg" alt="Chatbot for Teens">
+                <button onclick="navigateTo('chatbot')">AI Hub</button>
+            </div>
+            <div class="content-option age-specific-content adults-content">
+                <img src="adults ai.jpeg" alt="Chatbot for Adults">
+                <button onclick="navigateTo('chatbot')">AI Hub</button>
+            </div>
+    
+            <!-- Social Engagement Section -->
+            <div class="content-option age-specific-content kids-content">
+                <img src="social kids.jpeg" alt="Social for Kids">
+                <button onclick="navigateTo('social')">Social Engagement</button>
+            </div>
+            <div class="content-option age-specific-content teens-content">
+                <img src="social teens.jpeg" alt="Social for Teens">
+                <button onclick="navigateTo('social')">Social Engagement</button>
+            </div>
+            <div class="content-option age-specific-content adults-content">
+                <img src="social adults.jpeg" alt="Social for Adults">
+                <button onclick="navigateTo('social')">Social Engagement</button>
+            </div>
+        </div>
+    
+        <button onclick="backToProfile()">Go to Profile</button>
+    </section>
+    
+    
+
+    <script src="sih.js"></script>
+</body>
+</html>
