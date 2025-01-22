@@ -5,7 +5,7 @@ import time
 app = Flask(__name__)
 
 # Configure the generative AI model with your API key
-genai.configure(api_key="AIzaSyCV7pLU5IN8btkJ72BjLxK547cMc1lJOGY")
+genai.configure(api_key="")
 
 # Upload the file once and store the file reference
 def upload_to_gemini(path, mime_type=None):
